@@ -8,3 +8,7 @@ demo/*/Data/
 demo/*/Logs/
 demo/*/userPreferences.*/
 demo/*/Project/DerivedData/
+demo/*/data.4DD
+demo/*/data.journal
+demo/*/data.Match
+demo/*/Plugins/
