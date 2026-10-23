@@ -35,7 +35,7 @@ If (Find in array:C230($arrName; "4D Internet Commands")>0)
 	
 	// Parse .4dlink file in filename order
 	For each ($4dlinkFile; $files_c)
-		ALERT:C41("Checking Server "+$4dlinkFile.name)
+		ALERT:C41(Replace string(Localized string("Alert_CheckingServer"); "{name}"; $4dlinkFile.name))
 		
 		// Load .4dlink file
 		$4dlinkRef:=DOM Parse XML source:C719($4dlinkFile.platformPath)
@@ -54,7 +54,7 @@ If (Find in array:C230($arrName; "4D Internet Commands")>0)
 		
 		// If server is running connect to it
 		If ($found_b)
-			ALERT:C41("Server "+$4dlinkFile.name+" found. Connecting.")
+			ALERT:C41(Replace string(Localized string("Alert_ServerFound"); "{name}"; $4dlinkFile.name))
 			
 			OPEN DATABASE:C1321($4dlinkFile.platformPath)
 		End if 
@@ -64,7 +64,7 @@ If (Find in array:C230($arrName; "4D Internet Commands")>0)
 Else 
 	// 4D Internet Commands plugin is not found
 	// Automatically attempt Primary Server based on 4DLink file
-	ALERT:C41("Internet Commands Plugin Not Found Connecting first 4DLink File Found")
+	ALERT:C41(Localized string("Alert_PluginNotFound"))
 	OPEN DATABASE:C1321($files_c[0].platformPath)
 End if 
 
@@ -72,9 +72,9 @@ End if
 
 // If no connection could be made, attempt to connect to a 4D Server on the default port 19813
 If ($found_b=False:C215)
-	ALERT:C41("No 4DLink file Server found connecting to default 19813")
+	ALERT:C41(Localized string("Alert_NoServerFound"))
 	
-	$xml_t:="<?xml version=\"1.0\" encoding=\"UTF-8\"?><database_shortcut is_remote=\"true\" server_database_name=\"Demo_CS\" server_path=\""+":19813\"/>"
+	$xml_t:="<?xml version=\"1.0\" encoding=\"UTF-8\"?><database_shortcut is_remote=\"true\" server_database_name=\"CS\" server_path=\""+":19813\"/>"
 	$4dlinkFile:=Folder:C1567(fk user preferences folder:K87:10).file("server.4dlink")
 	$4dlinkFile.setText($xml_t)
 	

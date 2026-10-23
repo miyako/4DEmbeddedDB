@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file datatype="plaintext" original="CS.xlf" source-language="en" target-language="ja">
+		<body>
+			<trans-unit id="DemoPortal_WindowTitle" resname="DemoPortal_WindowTitle">
+				<source>Portal</source>
+				<target>ポータル</target>
+			</trans-unit>
+			<trans-unit id="DemoPortal_BtnDesign" resname="DemoPortal_BtnDesign">
+				<source>Design Mode</source>
+				<target>デザインモード</target>
+			</trans-unit>
+			<trans-unit id="DemoPortal_Title" resname="DemoPortal_Title">
+				<source>Demo Structure for Client Server Database</source>
+				<target>クライアント/サーバーデータベースのデモストラクチャー</target>
+			</trans-unit>
+			<trans-unit id="DemoPortal_Body" resname="DemoPortal_Body">
+				<source>This Database Structure will act as the Client Server Database for the Technical Note example.&#13;&#13;If a Remote Client connects to the server, a message reports the successful connection.&#13;&#13;If this structure is opened in local mode, this dialog is displayed.&#13;&#13;Click the Button below to return to design mode.&#13;Make sure to confirm the Build XML contains the proper key and path for the embedded database structure.&#13;In Design Mode, go to Design &gt; Build Application... and build the Client and Server applications when ready.&#13;&#13;After the build completes, add the 4D Internet Commands Plugin to the built client application. Next, create two copies of the Built CS 4D Server application. Run one copy and change its Port in the database settings. Restart it to confirm the port applies. Run a second copy with the default Port.&#13;&#13;Create a &quot;1.4dlink&quot; file with one of the Server's address and port and a &quot;2.4dlink&quot; and add it to the built application's Database/Resources/Servers/ directory. There should already be two files provided with ports 19823 and 19813.&#13;&#13;Run the built remote client application. It should connect to the Server specified in &quot;1.4dlink&quot;.&#13;Close the application and close the Server associated with &quot;1.4dlink&quot;.&#13;Run the built remote client application again. It should now connect to the second server specified in &quot;2.4dlink&quot;.</source>
+				<target>このデータベースストラクチャーは、テクニカルノートの例でクライアント/サーバーデータベースとして使用します。&#13;&#13;リモートクライアントがサーバーに接続すると、接続に成功したことを示すメッセージが表示されます。&#13;&#13;このストラクチャーをローカルモードで開くと、このダイアログが表示されます。&#13;&#13;下のボタンをクリックすると、デザインモードに戻ります。&#13;ビルド設定ファイル（XML）に、埋め込みデータベースのストラクチャーを指定する正しいキーとパスが含まれていることを確認してください。&#13;準備ができたら、デザインモードで「デザイン」＞「アプリケーションビルド...」を選択し、クライアントとサーバーのアプリケーションをビルドします。&#13;&#13;ビルドが完了したら、ビルドしたクライアントアプリケーションに 4D Internet Commands プラグインを追加します。次に、ビルドした CS の 4D Server アプリケーションのコピーを 2 つ作成します。一方を起動してデータベース設定でポートを変更し、再起動して設定を反映させます。もう一方はデフォルトのポートで起動します。&#13;&#13;一方のサーバーのアドレスとポートを記述した「1.4dlink」ファイルと、もう一方の「2.4dlink」ファイルを作成し、ビルドしたアプリケーションの Database/Resources/Servers/ フォルダーに追加します。ポート 19823 と 19813 を指定した 2 つのファイルがすでに用意されています。&#13;&#13;ビルドしたリモートクライアントアプリケーションを起動します。「1.4dlink」で指定したサーバーに接続されます。&#13;アプリケーションを終了し、「1.4dlink」に対応するサーバーを終了します。&#13;ビルドしたリモートクライアントアプリケーションを再度起動します。今度は「2.4dlink」で指定した 2 台目のサーバーに接続されます。</target>
+			</trans-unit>
+			<trans-unit id="Alert_ClientConnected" resname="Alert_ClientConnected">
+				<source>CS Structure - Client connected @ {port}</source>
+				<target>CS ストラクチャー：ポート {port} のサーバーに接続しました。</target>
+			</trans-unit>
+			<trans-unit id="Alert_LocalOpened" resname="Alert_LocalOpened">
+				<source>CS Structure is opened.</source>
+				<target>CS ストラクチャーが開かれました。</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

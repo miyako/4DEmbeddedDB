@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file datatype="plaintext" original="CS.xlf" source-language="en" target-language="en">
+		<body>
+			<trans-unit id="DemoPortal_WindowTitle" resname="DemoPortal_WindowTitle">
+				<source>Portal</source>
+			</trans-unit>
+			<trans-unit id="DemoPortal_BtnDesign" resname="DemoPortal_BtnDesign">
+				<source>Design Mode</source>
+			</trans-unit>
+			<trans-unit id="DemoPortal_Title" resname="DemoPortal_Title">
+				<source>Demo Structure for Client Server Database</source>
+			</trans-unit>
+			<trans-unit id="DemoPortal_Body" resname="DemoPortal_Body">
+				<source>This Database Structure will act as the Client Server Database for the Technical Note example.&#13;&#13;If a Remote Client connects to the server, a message reports the successful connection.&#13;&#13;If this structure is opened in local mode, this dialog is displayed.&#13;&#13;Click the Button below to return to design mode.&#13;Make sure to confirm the Build XML contains the proper key and path for the embedded database structure.&#13;In Design Mode, go to Design &gt; Build Application... and build the Client and Server applications when ready.&#13;&#13;After the build completes, add the 4D Internet Commands Plugin to the built client application. Next, create two copies of the Built CS 4D Server application. Run one copy and change its Port in the database settings. Restart it to confirm the port applies. Run a second copy with the default Port.&#13;&#13;Create a &quot;1.4dlink&quot; file with one of the Server's address and port and a &quot;2.4dlink&quot; and add it to the built application's Database/Resources/Servers/ directory. There should already be two files provided with ports 19823 and 19813.&#13;&#13;Run the built remote client application. It should connect to the Server specified in &quot;1.4dlink&quot;.&#13;Close the application and close the Server associated with &quot;1.4dlink&quot;.&#13;Run the built remote client application again. It should now connect to the second server specified in &quot;2.4dlink&quot;.</source>
+			</trans-unit>
+			<trans-unit id="Alert_ClientConnected" resname="Alert_ClientConnected">
+				<source>CS Structure - Client connected @ {port}</source>
+			</trans-unit>
+			<trans-unit id="Alert_LocalOpened" resname="Alert_LocalOpened">
+				<source>CS Structure is opened.</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

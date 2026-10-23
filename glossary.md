@@ -86,3 +86,21 @@ Full-width `（）` and `：` in prose. First occurrence of a technical term: �
 
 - Image 6, 7 → 図5, 6 (there is no Image 5); Step 15–22 → 手順14–21, the second Step 22 → 手順22.
 - CS `Startup` checks `4D Remote mode`, not `4D Volume desktop` (the text now matches the code).
+
+## Demo UI strings (demo/*/Resources/*.lproj)
+
+| English | 日本語 | Notes |
+|---|---|---|
+| Portal (window title) | ポータル | `DemoPortal_WindowTitle` |
+| Design Mode (button) | デザインモード | `DemoPortal_BtnDesign` |
+| Demo Structure for Embedded Database | 埋め込みデータベースのデモストラクチャー | |
+| Demo Structure for Client Server Database | クライアント/サーバーデータベースのデモストラクチャー | |
+| Design > Build Application... | 「デザイン」＞「アプリケーションビルド...」 | |
+
+## Changes to the demo projects
+
+- `server_database_name` in `Resources/Servers/1.4Dlink`, `2.4Dlink` and the default link in `findServer`: `Demo_CS` → `CS`.
+- `Startup` (4DEmbeddedDB) compares the structure name with `4DEmbeddedDB@` instead of `Demo_EmbeddedDB@`.
+- All alerts and form texts are in XLIFF (`en`, `ja`); the English texts use the actual names (4DEmbeddedDB, CS).
+- `Demo_Window` uses the non-blocking startup pattern (`CALL WORKER` + `DIALOG(…; *)`), replacing `New process` + `CLOSE WINDOW`.
+- CS `DemoPortal`: the text area is 60 px taller to fit the Japanese text.

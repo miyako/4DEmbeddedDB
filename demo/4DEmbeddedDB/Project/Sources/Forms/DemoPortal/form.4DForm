@@ -28,7 +28,7 @@
 		"onTimer",
 		"onBoundVariableChange"
 	],
-	"windowTitle": "window title",
+	"windowTitle": ":xliff:DemoPortal_WindowTitle",
 	"destination": "detailScreen",
 	"pages": [
 		{
@@ -38,7 +38,7 @@
 			"objects": {
 				"Text": {
 					"type": "text",
-					"text": "Demo Structure for Embedded Database",
+					"text": ":xliff:DemoPortal_Title",
 					"top": 20,
 					"left": 20,
 					"width": 800,
@@ -48,7 +48,7 @@
 				},
 				"Text1": {
 					"type": "text",
-					"text": "This Database Structure will act as the Embedded Database for the Technical Note example.\r\rThe methods of this Structure:\r- \"Startup\" : Checks if the database is run as a merged application or not. If the application is a merged application, the processes are performed to automatically attempt to connect to a Server. If not, this dialog is displayed.\r\r- \"findServer\" : Main method performing the check for Servers and attempts to connect to them if found.\r\r- \"pingServer\" : Uses 4D InternetCommands to check if Server is running\r\rClick the Button below to return to design mode to view the methods. \rIn Design Mode, go to File Menu > Design > Build Application... and build compiled structure when ready.\r\rBecause the Embedded Database requires the Internet Commands Plugin, the plugin also needs to be added to the host database. After completing the compilation. Make sure to add the Internet Commands Plugin to the built client.",
+					"text": ":xliff:DemoPortal_Body",
 					"top": 68,
 					"left": 20,
 					"width": 800,
@@ -57,7 +57,7 @@
 				},
 				"Button": {
 					"type": "button",
-					"text": "Design Mode",
+					"text": ":xliff:DemoPortal_BtnDesign",
 					"top": 488,
 					"left": 338,
 					"width": 164,
@@ -79,6 +79,5 @@
 		"views": {
 			"View 1": {}
 		}
-	},
-	"method": "method.4dm"
+	}
 }
