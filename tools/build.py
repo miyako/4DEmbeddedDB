@@ -62,9 +62,12 @@ def check(en: str, tr: str, lang: str) -> list:
 
 
 def fig_width(name: str) -> float:
-    """Printed width of the figure in the original PDF, in points."""
-    layout = ROOT / "figures" / "layout" / f"{name}.json"
-    return json.loads(layout.read_text())["width_pt"]
+    """Printed width of the figure in points: the original width, or `replace_width_pt`
+    for a replacement image whose size or proportions differ from the original."""
+    layout = json.loads((ROOT / "figures" / "layout" / f"{name}.json").read_text())
+    if layout.get("replace") and layout.get("replace_width_pt"):
+        return layout["replace_width_pt"]
+    return layout["width_pt"]
 
 
 def slug(n: int) -> str:
