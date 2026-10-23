@@ -1,0 +1,15 @@
+Design
+Records
+Tools
+Window
+Help
+Explorer
+Tool Box
+Database Structure
+Object Library
+Web Services Wizard
+Compiler...
+Ctrl+*
+Start Compilation
+Ctrl+Shift+*
+Build Application...

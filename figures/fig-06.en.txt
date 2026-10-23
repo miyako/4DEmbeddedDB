@@ -1,0 +1,9 @@
+User Settings
+Bae
+Interface Database Client-server
+PHP
+Network options configuration
+Network
+@ Publish databa
+Publication name: Demo_CS
+Port Number:

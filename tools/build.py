@@ -62,9 +62,12 @@ def check(en: str, tr: str, lang: str) -> list:
 
 
 def fig_width(name: str) -> float:
-    """Printed width of the figure in the original PDF, in points."""
-    layout = ROOT / "figures" / "layout" / f"{name}.json"
-    return json.loads(layout.read_text())["width_pt"]
+    """Printed width of the figure in points: the original width, or `replace_width_pt`
+    for a replacement image whose size or proportions differ from the original."""
+    layout = json.loads((ROOT / "figures" / "layout" / f"{name}.json").read_text())
+    if layout.get("replace") and layout.get("replace_width_pt"):
+        return layout["replace_width_pt"]
+    return layout["width_pt"]
 
 
 def slug(n: int) -> str:
@@ -146,10 +149,16 @@ def print_pdf(html_path: Path, pdf_path: Path):
 def find_pages(pdf_path: Path, toc) -> dict:
     doc = pymupdf.open(pdf_path)
     pages, start = {}, 2  # skip cover and table of contents
+    if toc:
+        # The TOC can span several pages: the body starts after the page listing the last entry.
+        last = re.sub(r"[*`]", "", toc[-1][1])[:20]
+        start = next((p + 1 for p in range(1, len(doc)) if doc[p].search_for(last)), start)
     for level, text, anchor in toc:
         needle = re.sub(r"[*`]", "", text)
-        for pno in range(start, len(doc)):
-            if doc[pno].search_for(needle):
+        # Long headings can wrap; fall back to their beginning.
+        for n in (needle, needle[:20]):
+            pno = next((p for p in range(start, len(doc)) if doc[p].search_for(n)), None)
+            if pno is not None:
                 pages[anchor] = pno + 1
                 start = pno
                 break

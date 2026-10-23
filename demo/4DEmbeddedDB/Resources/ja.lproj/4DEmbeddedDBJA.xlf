@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file datatype="plaintext" original="4DEmbeddedDB.xlf" source-language="en" target-language="ja">
+		<body>
+			<trans-unit id="DemoPortal_WindowTitle" resname="DemoPortal_WindowTitle">
+				<source>Portal</source>
+				<target>ポータル</target>
+			</trans-unit>
+			<trans-unit id="DemoPortal_BtnDesign" resname="DemoPortal_BtnDesign">
+				<source>Design Mode</source>
+				<target>デザインモード</target>
+			</trans-unit>
+			<trans-unit id="DemoPortal_Title" resname="DemoPortal_Title">
+				<source>Demo Structure for Embedded Database</source>
+				<target>埋め込みデータベースのデモストラクチャー</target>
+			</trans-unit>
+			<trans-unit id="DemoPortal_Body" resname="DemoPortal_Body">
+				<source>This Database Structure will act as the Embedded Database for the Technical Note example.&#13;&#13;The methods of this Structure:&#13;- &quot;Startup&quot; : Checks if the database is run as a merged application or not. If the application is a merged application, the processes are performed to automatically attempt to connect to a Server. If not, this dialog is displayed.&#13;&#13;- &quot;findServer&quot; : Main method performing the check for Servers and attempts to connect to them if found.&#13;&#13;- &quot;pingServer&quot; : Uses 4D InternetCommands to check if Server is running&#13;&#13;Click the Button below to return to design mode to view the methods.&#13;In Design Mode, go to Design &gt; Build Application... and build compiled structure when ready.&#13;&#13;Because the Embedded Database requires the Internet Commands Plugin, the plugin also needs to be added to the host database. After completing the compilation, make sure to add the Internet Commands Plugin to the built client.</source>
+				<target>このデータベースストラクチャーは、テクニカルノートの例で埋め込みデータベースとして使用します。&#13;&#13;このストラクチャーのメソッド：&#13;- 「Startup」：データベースが組み込みアプリケーションとして実行されているかを確認します。組み込みアプリケーションの場合は、サーバーへの自動接続を試みる処理を実行します。そうでない場合は、このダイアログを表示します。&#13;&#13;- 「findServer」：サーバーを確認し、見つかった場合に接続を試みるメインのメソッドです。&#13;&#13;- 「pingServer」：4D Internet Commands を使用して、サーバーが稼働しているかを確認します。&#13;&#13;下のボタンをクリックするとデザインモードに戻り、メソッドを確認できます。&#13;準備ができたら、デザインモードで「デザイン」＞「アプリケーションビルド...」を選択し、コンパイル版のストラクチャーをビルドします。&#13;&#13;埋め込みデータベースには Internet Commands プラグインが必要なため、ホストのデータベースにもプラグインを追加する必要があります。コンパイルが完了したら、ビルドしたクライアントにも Internet Commands プラグインを必ず追加してください。</target>
+			</trans-unit>
+			<trans-unit id="Alert_EmbeddedOpened" resname="Alert_EmbeddedOpened">
+				<source>4DEmbeddedDB Structure - Client in Stand Alone Mode With Embedded DB Opened.&#10;Click OK to ping and attempt to connect to server.</source>
+				<target>4DEmbeddedDB ストラクチャー：埋め込みデータベースを開き、クライアントをスタンドアロンモードで起動しました。&#10;OK をクリックすると、サーバーを確認して接続を試みます。</target>
+			</trans-unit>
+			<trans-unit id="Alert_NotEmbedded" resname="Alert_NotEmbedded">
+				<source>4DEmbeddedDB Structure is opened but not as an Embedded DB with a Built Client.</source>
+				<target>4DEmbeddedDB ストラクチャーが開かれましたが、ビルドしたクライアントの埋め込みデータベースとしてではありません。</target>
+			</trans-unit>
+			<trans-unit id="Alert_CheckingServer" resname="Alert_CheckingServer">
+				<source>Checking Server {name}</source>
+				<target>サーバー {name} を確認しています。</target>
+			</trans-unit>
+			<trans-unit id="Alert_ServerFound" resname="Alert_ServerFound">
+				<source>Server {name} found. Connecting.</source>
+				<target>サーバー {name} が見つかりました。接続します。</target>
+			</trans-unit>
+			<trans-unit id="Alert_PluginNotFound" resname="Alert_PluginNotFound">
+				<source>Internet Commands Plugin Not Found. Connecting to the first 4DLink file found.</source>
+				<target>Internet Commands プラグインが見つかりません。最初に見つかった 4DLink ファイルで接続します。</target>
+			</trans-unit>
+			<trans-unit id="Alert_NoServerFound" resname="Alert_NoServerFound">
+				<source>No 4DLink file Server found. Connecting to default 19813.</source>
+				<target>4DLink ファイルのサーバーが見つかりません。デフォルトのポート 19813 に接続します。</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

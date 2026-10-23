@@ -1,0 +1,10 @@
+Build Application
+Application Name:
+Demo_EmbeddedDB
+Destination Folder:
+"Demo_EmbeddedDB_Build” in volume
+Compiled structure Application Client/Server Plugins & components Licenses & Certificate
+‘A compiled structure can be opened by 4D Developer, 4D Desktop or 4D Server.
+Source code will be removed from compiled structure.
+The compiled structure will be built in the folder.
+ince Be

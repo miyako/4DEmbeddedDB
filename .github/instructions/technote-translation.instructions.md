@@ -110,7 +110,9 @@ For each changed item:
 Overrides per item: `scale`, `size`, `weight`, `align`, `dx`, `dy`, `box`, `bg`, `fg`, `erase_pad`.
 Per figure:
 - `"localize": false` copies the image unchanged (use it for screenshots)
-- `"replace": "fig-NN-<tgt>.png"` uses a ready-made image from `figures/`, keeping `width_pt`
+- `"replace": "fig-NN-<tgt>.png"` uses a ready-made image from `figures/`, keeping `width_pt`.
+  If the new image has a different resolution or shape (e.g. a retina screenshot), set `"replace_width_pt"`
+  so the UI prints at the same scale as the original: `width_pt / orig_px * new_px / 2` for 2x shots.
 
 Typical fixes:
 - OCR merged two labels: split the text and give explicit `box` values.

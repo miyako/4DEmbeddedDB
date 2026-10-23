@@ -1,0 +1,12 @@
+ile Edit
+Window Help
+Show Clipboard
+tic
+Server
+HTTP Ser
+Preferences.
+Ctrl+,
+Settings
+Structure Settings.
+User Settings.
+User Settings for Data file.
