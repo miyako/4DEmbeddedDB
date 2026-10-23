@@ -37,8 +37,52 @@ Full-width `（）` and `：` in prose. First occurrence of a technical term: �
 
 | English | 日本語 | Notes |
 |---|---|---|
+| Technical Note | テクニカルノート | |
+| built / merged application | ビルドしたアプリケーション / 組み込みアプリケーション | 公式ドキュメントの「組み込みアプリケーション」 |
+| Build Application (menu item) | アプリケーションビルド... | 「デザイン」メニュー |
+| Build Wizard / build window | アプリケーションビルドダイアログ / アプリケーションビルドウィンドウ | |
+| Build XML file | ビルド設定ファイル（XML） | buildApp.4DSettings |
+| Destination Folder | 保存先フォルダー | |
+| Compiled structure (tab) / Build compiled structure | 「コンパイル済みストラクチャー」タブ / コンパイル済みストラクチャーをビルド | |
+| Client/Server (tab) | 「クライアント/サーバー」タブ | |
+| Build server application / Build client application | サーバーアプリケーションをビルド / クライアントアプリケーションをビルド | |
+| 4D Server location / 4D Volume Desktop location | 4D Serverの場所 / 4D Volume Desktopの場所 | |
+| Data linking mode based upon / Application path | データリンクモードの基準 / アプリケーションパス | |
+| Save settings / Build (buttons) | 設定保存 / ビルド | |
+| User Settings... / User Settings for Data file... | ユーザー設定... / データファイル用のユーザー設定... | 「編集」＞「設定」 |
+| Client-server (settings page) / Network options (tab) | 「クライアント-サーバー」ページ / 「ネットワークオプション」タブ | |
+| Port Number | ポート番号 | |
+| On Startup Database method | On Startupデータベースメソッド | |
+| structure / compiled structure | ストラクチャー / コンパイル済みストラクチャー | |
+| interpreted mode / compiled mode | インタープリターモード / コンパイルモード | |
+| standalone (database, mode) | スタンドアロン（データベース、モード） | |
+| single-user | シングルユーザー | |
+| embedded database | 埋め込みデータベース | 「Embedded Database Feature」＝データベース埋め込み機能 |
+| 4D Remote Client | 4Dリモートクライアント | 初出：4Dリモートクライアント（4D Remote Client）。要確認 |
+| remote client | リモートクライアント | |
+| client-server | クライアント/サーバー | 設定ページ名のみ「クライアント-サーバー」 |
+| deployment | 運用（形態）/ 展開 | 「4D Deployment Options」＝4Dの運用形態 |
+| primary server / failover server | プライマリサーバー / フェイルオーバーサーバー | |
+| automatic failover | 自動フェイルオーバー | |
+| proof of concept | 概念実証 | 初出に（proof of concept） |
+| data file | データファイル | |
+| 4D access file (.4dlink) | 4Dアクセスファイル（.4DLink） | 一般名は「.4DLinkファイル」、実ファイル名は demo に合わせ「1.4Dlink」 |
+| directory | フォルダー | |
+| show package contents | パッケージの内容を表示 | macOS |
 
 ## Proper nouns in examples
 
 | English | 日本語 | Notes |
 |---|---|---|
+| Demo_EmbeddedDB | 4DEmbeddedDB | デモの実フォルダー名に合わせる |
+| Demo_CS | CS | デモの実フォルダー名に合わせる |
+| Demo (folder) | demo | |
+| \Demo\templates\ | 4DEmbeddedDB/Resources/Servers/ | テンプレートの実際の場所 |
+| “Server” directory (Step 19) | 「Servers」フォルダー | findServer のコードに合わせる |
+| Tai Bui | Tai Bui | 著者名は英字のまま |
+| 4D Internet Commands | 4D Internet Commands | プラグイン名は英字のまま |
+
+## Corrections to the original (applied in ja only)
+
+- Image 6, 7 → 図5, 6 (there is no Image 5); Step 15–22 → 手順14–21, the second Step 22 → 手順22.
+- CS `Startup` checks `4D Remote mode`, not `4D Volume desktop` (the text now matches the code).

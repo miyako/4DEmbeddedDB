@@ -146,10 +146,16 @@ def print_pdf(html_path: Path, pdf_path: Path):
 def find_pages(pdf_path: Path, toc) -> dict:
     doc = pymupdf.open(pdf_path)
     pages, start = {}, 2  # skip cover and table of contents
+    if toc:
+        # The TOC can span several pages: the body starts after the page listing the last entry.
+        last = re.sub(r"[*`]", "", toc[-1][1])[:20]
+        start = next((p + 1 for p in range(1, len(doc)) if doc[p].search_for(last)), start)
     for level, text, anchor in toc:
         needle = re.sub(r"[*`]", "", text)
-        for pno in range(start, len(doc)):
-            if doc[pno].search_for(needle):
+        # Long headings can wrap; fall back to their beginning.
+        for n in (needle, needle[:20]):
+            pno = next((p for p in range(start, len(doc)) if doc[p].search_for(n)), None)
+            if pno is not None:
                 pages[anchor] = pno + 1
                 start = pno
                 break
