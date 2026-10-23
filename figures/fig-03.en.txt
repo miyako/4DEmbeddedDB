@@ -1,0 +1,13 @@
+Build Application
+Application Name: Demo_CS
+Destination Folder:
+"Demo_CS_Buil
+volume “
+Compiled structure Application Client/Server Plugins & components Licenses & Certificate
+The server will be built for the current platform and can only be launched on it.
+Macintosh and Windows clients will be able to connect to it.
+4D Server location:
+“4D Server" in volume
+Current versi
+1
+Data linking mode based upon the Application path

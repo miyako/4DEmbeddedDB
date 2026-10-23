@@ -1,0 +1,5 @@
+(Bulg client appication]
+It can connect to a server running on either Macintosh or Windows.
+The client will be built for the current platform and can only be launched on it.
+4D Volume Desktop Location:
+“4D Volume Desktop" in volume *

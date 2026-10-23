@@ -1,0 +1,98 @@
+{
+ "source": "fig-02.png",
+ "page": 10,
+ "width_pt": 395.7,
+ "localize": false,
+ "items": [
+  {
+   "box": [
+    4,
+    7,
+    111,
+    14
+   ],
+   "align": "center"
+  },
+  {
+   "box": [
+    193,
+    61,
+    123,
+    14
+   ],
+   "align": "center"
+  },
+  {
+   "box": [
+    333,
+    61,
+    135,
+    13
+   ],
+   "align": "center"
+  },
+  {
+   "box": [
+    194,
+    100,
+    122,
+    11
+   ],
+   "align": "center"
+  },
+  {
+   "box": [
+    433,
+    101,
+    256,
+    13
+   ],
+   "align": "center"
+  },
+  {
+   "box": [
+    34,
+    147,
+    622,
+    16
+   ],
+   "align": "center"
+  },
+  {
+   "box": [
+    108,
+    225,
+    465,
+    13
+   ],
+   "align": "center"
+  },
+  {
+   "box": [
+    109,
+    241,
+    311,
+    13
+   ],
+   "align": "center"
+  },
+  {
+   "box": [
+    110,
+    257,
+    350,
+    13
+   ],
+   "align": "center"
+  },
+  {
+   "box": [
+    105,
+    298,
+    166,
+    9
+   ],
+   "align": "center"
+  }
+ ]
+}
